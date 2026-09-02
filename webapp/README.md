@@ -4,6 +4,8 @@ A demo e-commerce site for a fictional outdoor apparel brand, "Nothface" — jac
 
 **Live demo:** https://tamilselvansankar.github.io/Northface/
 
+![Nothface home page screenshot](docs/screenshot.png)
+
 ## Features
 
 - Product catalog with category filters and search (`/products`)
