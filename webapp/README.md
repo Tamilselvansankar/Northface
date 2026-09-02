@@ -2,6 +2,8 @@
 
 A demo e-commerce site for a fictional outdoor apparel brand, "Nothface" — jackets, hoodies, t-shirts, bags, and accessories, priced in INR. Built with React, Vite, and React Router. All data (cart, wishlist, accounts, orders) is stored in the browser's `localStorage` — there is no backend and no real payments are processed.
 
+**Live demo:** https://tamilselvansankar.github.io/Northface/
+
 ## Features
 
 - Product catalog with category filters and search (`/products`)
@@ -76,6 +78,16 @@ docker run -d -p 8080:80 tamilselvansankar/nothface-webapp:latest
 ```
 
 Tagged versions are also available, e.g. `tamilselvansankar/nothface-webapp:v1.0`.
+
+## Deploying to GitHub Pages
+
+The live demo above is published from the `dist/` build output to the `gh-pages` branch:
+
+```bash
+npm run deploy
+```
+
+This runs `predeploy` first (a production build with the `/Northface/` base path GitHub Pages needs), then publishes `dist/` via the `gh-pages` package. Routing uses React Router's `HashRouter` (URLs like `#/products`) since GitHub Pages has no server-side fallback for client-side routes.
 
 ## Project structure
 
